@@ -1,5 +1,11 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import { recentActivity } from '@/lib/mock-data'
 
 export function RecentActivity() {
@@ -32,4 +38,3 @@ export function RecentActivity() {
     </Card>
   )
 }
-

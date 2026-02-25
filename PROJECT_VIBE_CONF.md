@@ -15,11 +15,11 @@ Ce projet est un **template** conçu pour être réutilisé dans différents con
 ## Description
 
 Template React moderne avec :
-- React 19.2.0
-- Vite 7.1.12
+- React 19.2.4
+- Vite 7.3.1
 - TypeScript 5.9.3 (strict mode)
 - Shadcn UI (composants)
-- Tailwind CSS 4.1.16
+- Tailwind CSS 4.2.1
 - Dark mode (next-themes)
 - Dashboard complet pré-configuré
 
@@ -73,10 +73,10 @@ Documentation complète disponible :
 
 ## Technologies Clés
 
-- **Frontend Framework**: React 19.2.0
-- **Build Tool**: Vite 7.1.12
+- **Frontend Framework**: React 19.2.4
+- **Build Tool**: Vite 7.3.1
 - **Language**: TypeScript 5.9.3
-- **Styling**: Tailwind CSS 4.1.16
+- **Styling**: Tailwind CSS 4.2.1
 - **Components**: Shadcn UI
 - **Icons**: Lucide React
 - **Charts**: Recharts

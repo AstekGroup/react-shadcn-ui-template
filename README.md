@@ -2,10 +2,10 @@
 
 A modern, production-ready React template built with Vite, TypeScript, and Shadcn UI. Features a complete dashboard with dark mode, responsive design, and comprehensive component library.
 
-![React](https://img.shields.io/badge/React-19.2.0-blue)
-![Vite](https://img.shields.io/badge/Vite-7.1.12-646CFF)
+![React](https://img.shields.io/badge/React-19.2.4-blue)
+![Vite](https://img.shields.io/badge/Vite-7.3.1-646CFF)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.16-38B2AC)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2.1-38B2AC)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## ✨ Features
@@ -253,10 +253,10 @@ Comprehensive documentation is available in the `/resources` folder:
 
 ## 🛠️ Tech Stack
 
-- **React 19.2.0** - Latest React with concurrent features
-- **Vite 7.1.12** - Next generation frontend tooling
+- **React 19.2.4** - Latest React with concurrent features
+- **Vite 7.3.1** - Next generation frontend tooling
 - **TypeScript 5.9.3** - JavaScript with syntax for types
-- **Tailwind CSS 4.1.16** - Utility-first CSS framework
+- **Tailwind CSS 4.2.1** - Utility-first CSS framework
 - **Shadcn UI** - Re-usable components built with Radix UI
 - **Recharts** - Composable charting library
 - **Lucide React** - Beautiful & consistent icon toolkit

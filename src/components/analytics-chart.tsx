@@ -1,15 +1,15 @@
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from '@/components/ui/card'
 import type { ChartConfig } from '@/components/ui/chart'
 import {
-    ChartContainer,
-    ChartTooltip,
-    ChartTooltipContent,
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
 } from '@/components/ui/chart'
 import { chartData } from '@/lib/mock-data'
 import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts'
@@ -55,4 +55,3 @@ export function AnalyticsChart() {
     </Card>
   )
 }
-

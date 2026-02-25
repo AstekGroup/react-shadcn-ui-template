@@ -10,8 +10,8 @@ Date de vérification: 28 octobre 2025
 - [x] Projet Vite créé avec template React + TypeScript
 - [x] Structure de dossiers complète (`src/`, `public/`, `components/`, etc.)
 - [x] Dépendances installées via pnpm
-- [x] React 19.2.0 (dernière version)
-- [x] Vite 7.1.12 (dernière version)
+- [x] React 19.2.4 (dernière version)
+- [x] Vite 7.3.1 (dernière version)
 
 ### 2. Configuration TypeScript
 - [x] Mode strict activé
@@ -20,7 +20,7 @@ Date de vérification: 28 octobre 2025
 - [x] Type checking sans erreurs: `pnpm type-check` ✅
 
 ### 3. Tailwind CSS
-- [x] Tailwind CSS v4.1.16 installé
+- [x] Tailwind CSS v4.2.1 installé
 - [x] Plugin Vite Tailwind configuré
 - [x] `src/index.css` avec import Tailwind
 - [x] CSS variables pour theming
@@ -89,14 +89,14 @@ Date de vérification: 28 octobre 2025
 ### 12. Tests de Fonctionnement
 - [x] Type checking: `pnpm type-check` ✅ PASS
 - [x] Linting: `pnpm lint` ✅ PASS (4 warnings acceptables)
-- [x] Build: `pnpm build` ✅ PASS (736 KB)
+- [x] Build: `pnpm build` ✅ PASS (697 KB)
 - [x] Dev server: `pnpm dev` ✅ LANCÉ
 
 ## 📊 Métriques du Projet
 
 ### Taille du Bundle
-- CSS: 61.39 KB (gzip: 10.83 KB)
-- JS: 736.83 KB (gzip: 217.06 KB)
+- CSS: 61.79 KB (gzip: 10.82 KB)
+- JS: 697.13 KB (gzip: 214.53 KB)
 - HTML: 0.46 KB (gzip: 0.29 KB)
 
 ### Composants Shadcn UI Installés
