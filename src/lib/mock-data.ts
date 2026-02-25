@@ -128,4 +128,3 @@ export const tableData = [
     amount: '$550.00',
   },
 ]
-

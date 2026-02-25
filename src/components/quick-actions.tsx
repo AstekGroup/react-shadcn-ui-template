@@ -1,5 +1,11 @@
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import { FileText, Plus, Settings, Users } from 'lucide-react'
 
 export function QuickActions() {
@@ -7,7 +13,9 @@ export function QuickActions() {
     <Card>
       <CardHeader>
         <CardTitle>Quick Actions</CardTitle>
-        <CardDescription>Frequently used actions for your workflow</CardDescription>
+        <CardDescription>
+          Frequently used actions for your workflow
+        </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <Button className="w-full justify-start" variant="outline">
@@ -30,4 +38,3 @@ export function QuickActions() {
     </Card>
   )
 }
-

@@ -1,18 +1,18 @@
 import { Badge } from '@/components/ui/badge'
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from '@/components/ui/card'
 import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
 } from '@/components/ui/table'
 import { tableData } from '@/lib/mock-data'
 
@@ -60,4 +60,3 @@ export function RecentTransactions() {
     </Card>
   )
 }
-

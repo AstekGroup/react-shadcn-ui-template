@@ -58,13 +58,13 @@ react-shadcn-ui/
 ## 🚀 Technologies Implémentées
 
 ### Core
-- **React 19.2.0** - Dernière version stable
-- **Vite 7.1.12** - Build tool ultra-rapide
+- **React 19.2.4** - Dernière version stable
+- **Vite 7.3.1** - Build tool ultra-rapide
 - **TypeScript 5.9.3** - Mode strict activé
 - **pnpm** - Gestionnaire de packages
 
 ### Styling & UI
-- **Tailwind CSS 4.1.16** - Framework CSS utility-first
+- **Tailwind CSS 4.2.1** - Framework CSS utility-first
 - **Shadcn UI** - 26+ composants accessibles
 - **Radix UI** - Primitives UI headless
 - **Lucide React** - Bibliothèque d'icônes
@@ -251,8 +251,8 @@ pnpm lint
 ```bash
 pnpm build
 # ✅ PASS
-# - CSS: 61.39 KB (gzip: 10.83 KB)
-# - JS: 736.83 KB (gzip: 217.06 KB)
+# - CSS: 61.79 KB (gzip: 10.82 KB)
+# - JS: 697.13 KB (gzip: 214.53 KB)
 # - HTML: 0.46 KB
 ```
 

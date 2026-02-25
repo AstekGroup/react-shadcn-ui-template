@@ -1,25 +1,32 @@
 import { ModeToggle } from '@/components/mode-toggle'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import {
-    Sidebar,
-    SidebarContent,
-    SidebarGroup,
-    SidebarGroupContent,
-    SidebarGroupLabel,
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem,
-    SidebarProvider,
-    SidebarTrigger,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarProvider,
+  SidebarTrigger,
 } from '@/components/ui/sidebar'
 import {
-    BarChart3,
-    Home,
-    LayoutDashboard,
-    Settings,
-    ShoppingCart,
-    Users,
+  BarChart3,
+  Home,
+  LayoutDashboard,
+  Settings,
+  ShoppingCart,
+  Users,
 } from 'lucide-react'
 
 const menuItems = [
@@ -107,4 +114,3 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
     </SidebarProvider>
   )
 }
-

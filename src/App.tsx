@@ -5,12 +5,12 @@ import { RecentActivity } from '@/components/recent-activity'
 import { RecentTransactions } from '@/components/recent-transactions'
 import { StatsCards } from '@/components/stats-cards'
 import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 

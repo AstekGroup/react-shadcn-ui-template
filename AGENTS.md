@@ -19,10 +19,10 @@ This template is designed to be cloned and integrated into monorepo projects or 
 
 ## Tech Stack
 
-- **React 19.2.0** - Latest React with concurrent features
-- **Vite 7.1.12** - Lightning-fast build tool
+- **React 19.2.4** - Latest React with concurrent features
+- **Vite 7.3.1** - Lightning-fast build tool
 - **TypeScript 5.9.3** - Type safety with strict mode
-- **Tailwind CSS 4.1.16** - Utility-first CSS framework
+- **Tailwind CSS 4.2.1** - Utility-first CSS framework
 - **Shadcn UI** - Accessible and customizable components
 - **Recharts** - Charting library for data visualization
 - **Lucide React** - Beautiful icon library
