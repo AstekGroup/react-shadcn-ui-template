@@ -144,6 +144,37 @@ const ProfilePage = lazy(() =>
   }))
 )
 
+// Showcase — Layouts
+const LayoutsShowcase = lazy(() =>
+  import('@/showcase/layouts-showcase').then((m) => ({
+    default: m.LayoutsShowcase,
+  }))
+)
+const LayoutPreview = lazy(() =>
+  import('@/showcase/layout-preview').then((m) => ({
+    default: m.LayoutPreview,
+  }))
+)
+
+// Showcase — Styles
+const StylesShowcase = lazy(() =>
+  import('@/showcase/styles-showcase').then((m) => ({
+    default: m.StylesShowcase,
+  }))
+)
+const StylePreview = lazy(() =>
+  import('@/showcase/style-preview').then((m) => ({
+    default: m.StylePreview,
+  }))
+)
+
+// Showcase — Get Started
+const GetStarted = lazy(() =>
+  import('@/showcase/get-started').then((m) => ({
+    default: m.GetStarted,
+  }))
+)
+
 // Minimal layout for auth/errors
 const MinimalLayout = lazy(() =>
   import('@/layouts/minimal-layout').then((m) => ({
@@ -157,7 +188,20 @@ export const router = createBrowserRouter([
     element: <ShowcaseLayout />,
     children: [
       { index: true, element: <ShowcaseHome /> },
+      { path: 'showcase/layouts', element: <LayoutsShowcase /> },
+      { path: 'showcase/styles', element: <StylesShowcase /> },
+      { path: 'showcase/get-started', element: <GetStarted /> },
     ],
+  },
+  // Layout previews (standalone, outside ShowcaseLayout)
+  {
+    path: '/showcase/layouts/:layoutId',
+    element: <LayoutPreview />,
+  },
+  // Style previews (standalone, outside ShowcaseLayout)
+  {
+    path: '/showcase/styles/:styleId',
+    element: <StylePreview />,
   },
   // Dashboard kit
   {
@@ -226,9 +270,7 @@ export const router = createBrowserRouter([
   {
     path: '/kit/landing',
     element: <KitLayoutResolver kitId="landing" />,
-    children: [
-      { index: true, element: <LandingHome /> },
-    ],
+    children: [{ index: true, element: <LandingHome /> }],
   },
   // Auth pages (minimal layout)
   {
@@ -253,8 +295,6 @@ export const router = createBrowserRouter([
   {
     path: '*',
     element: <MinimalLayout />,
-    children: [
-      { path: '*', element: <NotFoundPage /> },
-    ],
+    children: [{ path: '*', element: <NotFoundPage /> }],
   },
 ])

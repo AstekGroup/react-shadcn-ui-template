@@ -12,11 +12,25 @@ import { manifest as dashboardManifest } from '@/kits/dashboard/manifest'
 import { manifest as ecommerceManifest } from '@/kits/ecommerce/manifest'
 import { manifest as landingManifest } from '@/kits/landing/manifest'
 import { manifest as saasManifest } from '@/kits/saas/manifest'
-import { ArrowRight, Layers, Lock, Palette, ServerCrash } from 'lucide-react'
+import {
+  ArrowRight,
+  FileText,
+  Layers,
+  Lock,
+  Palette,
+  PanelLeft,
+  Play,
+  ServerCrash,
+} from 'lucide-react'
 import { Link } from 'react-router'
 import { KitCard } from './components/kit-card'
 
-const kits = [dashboardManifest, saasManifest, ecommerceManifest, landingManifest]
+const kits = [
+  dashboardManifest,
+  saasManifest,
+  ecommerceManifest,
+  landingManifest,
+]
 
 const sharedPages = [
   {
@@ -42,7 +56,7 @@ const sharedPages = [
 
 export function ShowcaseHome() {
   return (
-    <div className="space-y-12">
+    <div className="container mx-auto space-y-12 px-6 py-8">
       {/* Hero */}
       <div className="space-y-4 text-center">
         <Badge variant="secondary" className="mb-2">
@@ -52,9 +66,19 @@ export function ShowcaseHome() {
           React + Shadcn UI Templates
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-          A collection of starter kits, layouts, and visual variations built with
-          React, TypeScript, Tailwind CSS, and Shadcn UI.
+          A collection of starter kits, layouts, and visual variations built
+          with React, TypeScript, Tailwind CSS, and Shadcn UI.
         </p>
+      </div>
+
+      {/* Get Started CTA */}
+      <div className="flex justify-center">
+        <Button asChild size="lg" className="gap-2">
+          <Link to="/showcase/get-started">
+            <Play className="h-4 w-4" />
+            Get Started — pick your kit
+          </Link>
+        </Button>
       </div>
 
       {/* Stats */}
@@ -91,10 +115,50 @@ export function ShowcaseHome() {
 
       <Separator />
 
-      {/* Shared Pages */}
+      {/* Layouts */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3">
+          <PanelLeft className="h-6 w-6 text-primary" />
+          <h2 className="text-2xl font-bold">Layouts</h2>
+        </div>
+        <p className="text-muted-foreground">
+          4 interchangeable layouts — sidebar, top navigation, landing page, and
+          minimal — that can be mixed and matched with any starter kit.
+        </p>
+        <Button asChild variant="outline">
+          <Link to="/showcase/layouts">
+            View all layouts
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </section>
+
+      <Separator />
+
+      {/* Visual Styles */}
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <Palette className="h-6 w-6 text-primary" />
+          <h2 className="text-2xl font-bold">Visual Styles</h2>
+        </div>
+        <p className="text-muted-foreground">
+          5 visual style variants — from the clean Shadcn default to animated
+          and magical effects — that change how components look and feel.
+        </p>
+        <Button asChild variant="outline">
+          <Link to="/showcase/styles">
+            View all styles
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </section>
+
+      <Separator />
+
+      {/* Shared Pages */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-3">
+          <FileText className="h-6 w-6 text-primary" />
           <h2 className="text-2xl font-bold">Shared Pages</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
@@ -112,12 +176,7 @@ export function ShowcaseHome() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {section.links.map((link) => (
-                    <Button
-                      key={link.url}
-                      variant="outline"
-                      size="sm"
-                      asChild
-                    >
+                    <Button key={link.url} variant="outline" size="sm" asChild>
                       <Link to={link.url}>
                         {link.label}
                         <ArrowRight className="ml-1 h-3 w-3" />

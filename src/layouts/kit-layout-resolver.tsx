@@ -1,3 +1,4 @@
+import { BackToShowcase } from '@/showcase/components/back-to-showcase'
 import { Outlet, useSearchParams } from 'react-router'
 import { SidebarLayout } from './sidebar-layout'
 import { TopbarLayout } from './topbar-layout'
@@ -50,8 +51,11 @@ export function KitLayoutResolver({ kitId }: KitLayoutResolverProps) {
   }
 
   return (
-    <LayoutComponent nav={manifest.nav} title={manifest.label}>
-      <Outlet />
-    </LayoutComponent>
+    <>
+      <LayoutComponent nav={manifest.nav} title={manifest.label}>
+        <Outlet />
+      </LayoutComponent>
+      <BackToShowcase />
+    </>
   )
 }

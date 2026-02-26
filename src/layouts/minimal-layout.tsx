@@ -1,4 +1,5 @@
 import { ModeToggle } from '@/components/mode-toggle'
+import { BackToShowcase } from '@/showcase/components/back-to-showcase'
 import { Outlet } from 'react-router'
 
 export function MinimalLayout() {
@@ -8,6 +9,7 @@ export function MinimalLayout() {
         <ModeToggle />
       </div>
       <Outlet />
+      <BackToShowcase />
     </div>
   )
 }
