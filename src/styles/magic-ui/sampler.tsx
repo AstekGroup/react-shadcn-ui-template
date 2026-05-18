@@ -3,13 +3,13 @@ import { Separator } from '@/components/ui/separator'
 import {
   Cloud,
   ExternalLink,
-  Github,
   Globe,
   Heart,
   Sparkles,
   Star,
   Zap,
 } from 'lucide-react'
+import { Github } from '@/components/icons/github'
 import { AnimatedGradientText } from './components/animated-gradient-text'
 import { HyperText } from './components/hyper-text'
 import { NumberTicker } from './components/number-ticker'
