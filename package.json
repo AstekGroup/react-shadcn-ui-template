@@ -1,7 +1,7 @@
 {
   "name": "@templates/react-shadcn-ui",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "module",
   "description": "Multi-template system with React + Vite + TypeScript + Shadcn UI — 4 starter kits, 4 layouts, shared pages, and visual variations",
   "keywords": [
