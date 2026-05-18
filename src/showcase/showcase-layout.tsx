@@ -18,7 +18,6 @@ import {
 } from '@/components/ui/sheet'
 import { Separator } from '@/components/ui/separator'
 import {
-  Github,
   Home,
   LayoutDashboard,
   Lock,
@@ -31,6 +30,7 @@ import {
   ShoppingBag,
   Sparkles,
 } from 'lucide-react'
+import { Github } from '@/components/icons/github'
 import { cn } from '@/lib/utils'
 import { Link, Outlet, useLocation } from 'react-router'
 
