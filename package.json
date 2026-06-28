@@ -1,28 +1,86 @@
 {
-  "name": "@templates/react-shadcn-ui",
-  "private": true,
-  "version": "2.2.0",
+  "name": "@astekgroup/react-shadcn-ui-template",
+  "private": false,
+  "version": "3.0.0",
   "type": "module",
   "engines": {
     "node": ">=22.22.0"
   },
-  "description": "Multi-template system with React + Vite + TypeScript + Shadcn UI — 4 starter kits, 4 layouts, shared pages, and visual variations",
+  "description": "Multi-template system with React + Vite + TypeScript + Shadcn UI — 4 starter kits, 4 layouts, shared pages, and visual variations. Consumable as a themeable component library.",
   "keywords": [
     "react",
     "vite",
     "typescript",
     "shadcn-ui",
     "tailwindcss",
-    "template"
+    "template",
+    "design-system",
+    "component-library"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstekGroup/react-shadcn-ui-template.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./providers": {
+      "types": "./dist/providers/index.d.ts",
+      "import": "./dist/providers/index.js"
+    },
+    "./layouts": {
+      "types": "./dist/layouts/index.d.ts",
+      "import": "./dist/layouts/index.js"
+    },
+    "./pages": {
+      "types": "./dist/pages/index.d.ts",
+      "import": "./dist/pages/index.js"
+    },
+    "./lib": {
+      "types": "./dist/lib/index.d.ts",
+      "import": "./dist/lib/index.js"
+    },
+    "./hooks/*": {
+      "types": "./dist/hooks/*.d.ts",
+      "import": "./dist/hooks/*.js"
+    },
+    "./kits/*": {
+      "types": "./dist/kits/*/index.d.ts",
+      "import": "./dist/kits/*/index.js"
+    },
+    "./ui/*": {
+      "types": "./dist/components/ui/*.d.ts",
+      "import": "./dist/components/ui/*.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:lib": "vite build --config vite.lib.config.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "pnpm build:lib"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "react-router": ">=7.0.0"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
@@ -44,10 +102,7 @@
     "motion": "^12.42.0",
     "next-themes": "^0.4.6",
     "radix-ui": "^1.6.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
     "react-hook-form": "^7.80.0",
-    "react-router": "^8.0.1",
     "recharts": "3.9.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.6.0",
@@ -65,14 +120,23 @@
     "eslint": "^10.6.0",
     "eslint-plugin-react-hooks": "~7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "glob": "^13.0.6",
     "globals": "^17.7.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
     "prettier": "^3.9.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^8.0.1",
     "tailwindcss": "^4.3.1",
     "tw-animate-css": "^1.4.0",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.62.0",
-    "vite": "^8.1.0"
+    "vite": "^8.1.0",
+    "vite-plugin-dts": "^5.0.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
   }
 }

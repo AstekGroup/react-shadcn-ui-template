@@ -1,3 +1,4 @@
+import { BrandMark } from '@/components/brand-mark'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -51,7 +52,12 @@ export function TopbarLayout({ children, nav, title }: LayoutProps) {
     <div className="flex h-screen flex-col">
       <header className="sticky top-0 z-10 border-b bg-background">
         <div className="flex h-16 items-center gap-4 px-6">
-          {title && <h1 className="text-lg font-semibold shrink-0">{title}</h1>}
+          <BrandMark className="shrink-0" />
+          {title && (
+            <h1 className="text-lg font-semibold shrink-0 text-muted-foreground">
+              {title}
+            </h1>
+          )}
           {isMobile ? (
             <Sheet>
               <SheetTrigger asChild>

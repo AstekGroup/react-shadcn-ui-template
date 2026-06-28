@@ -1,1 +1,6 @@
 export { manifest } from './manifest'
+export { SaasHome } from './pages/saas-home'
+export { UsersPage } from './pages/users'
+export { BillingPage } from './pages/billing'
+export { OnboardingPage } from './pages/onboarding'
+export { FeaturesPage } from './pages/features'

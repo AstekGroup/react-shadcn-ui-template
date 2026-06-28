@@ -11,4 +11,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // The showcase app builds here; dist/ is reserved for the published library.
+  build: {
+    outDir: 'dist-showcase',
+  },
 })
