@@ -32,7 +32,7 @@ export function PricingTable() {
               key={plan.name}
               className={cn(
                 'relative flex flex-col',
-                plan.popular && 'border-primary shadow-lg',
+                plan.popular && 'border-primary shadow-lg'
               )}
             >
               {plan.popular && (

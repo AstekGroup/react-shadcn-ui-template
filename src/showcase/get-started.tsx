@@ -18,11 +18,7 @@ const REPO_URL = 'https://github.com/AstekGroup/react-shadcn-ui-template'
 
 type KitId = 'dashboard' | 'saas' | 'ecommerce' | 'landing'
 type StyleId =
-  | 'default'
-  | 'react-bits'
-  | 'magic-ui'
-  | 'aceternity'
-  | 'animate-ui'
+  'default' | 'react-bits' | 'magic-ui' | 'aceternity' | 'animate-ui'
 
 interface KitOption {
   id: KitId

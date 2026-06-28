@@ -17,9 +17,7 @@ export function ProductGallery({ productName }: ProductGalleryProps) {
         <div className="flex flex-col items-center gap-2">
           <ImageIcon className="text-muted-foreground h-16 w-16" />
           {productName && (
-            <span className="text-muted-foreground text-sm">
-              {productName}
-            </span>
+            <span className="text-muted-foreground text-sm">{productName}</span>
           )}
         </div>
       </div>
@@ -32,7 +30,7 @@ export function ProductGallery({ productName }: ProductGalleryProps) {
               'bg-muted flex aspect-square items-center justify-center rounded-md border-2 transition-colors',
               selected === index
                 ? 'border-primary'
-                : 'border-transparent hover:border-muted-foreground/30',
+                : 'border-transparent hover:border-muted-foreground/30'
             )}
           >
             <ImageIcon className="text-muted-foreground h-6 w-6" />

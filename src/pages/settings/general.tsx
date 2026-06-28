@@ -54,7 +54,9 @@ export function GeneralSettingsPage() {
               <SelectValue placeholder="Select a timezone" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="utc">UTC (Coordinated Universal Time)</SelectItem>
+              <SelectItem value="utc">
+                UTC (Coordinated Universal Time)
+              </SelectItem>
               <SelectItem value="est">EST (Eastern Standard Time)</SelectItem>
               <SelectItem value="cst">CST (Central Standard Time)</SelectItem>
               <SelectItem value="mst">MST (Mountain Standard Time)</SelectItem>

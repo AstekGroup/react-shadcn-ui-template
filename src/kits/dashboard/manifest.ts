@@ -19,7 +19,11 @@ export const manifest: KitManifest = {
       label: 'Dashboard',
       items: [
         { title: 'Overview', url: '/kit/dashboard', icon: LayoutDashboard },
-        { title: 'Analytics', url: '/kit/dashboard/analytics', icon: BarChart3 },
+        {
+          title: 'Analytics',
+          url: '/kit/dashboard/analytics',
+          icon: BarChart3,
+        },
         { title: 'Reports', url: '/kit/dashboard/reports', icon: FileText },
       ],
     },

@@ -1,11 +1,7 @@
 import type { ComponentType } from 'react'
 
 export type StyleId =
-  | 'default'
-  | 'react-bits'
-  | 'magic-ui'
-  | 'aceternity'
-  | 'animate-ui'
+  'default' | 'react-bits' | 'magic-ui' | 'aceternity' | 'animate-ui'
 
 export interface StyleVariant {
   id: StyleId

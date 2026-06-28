@@ -37,7 +37,7 @@ export function PriceDisplay({
           <span
             className={cn(
               'text-muted-foreground line-through',
-              originalSizeClasses[size],
+              originalSizeClasses[size]
             )}
           >
             ${originalPrice.toFixed(2)}
@@ -46,7 +46,7 @@ export function PriceDisplay({
             <span
               className={cn(
                 'font-medium text-green-600 dark:text-green-400',
-                originalSizeClasses[size],
+                originalSizeClasses[size]
               )}
             >
               -{discount}%

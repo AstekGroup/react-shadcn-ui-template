@@ -24,7 +24,7 @@ export function PlanSelector() {
             key={plan.id}
             className={cn(
               'relative',
-              plan.popular && 'border-primary shadow-md',
+              plan.popular && 'border-primary shadow-md'
             )}
           >
             {plan.popular && (

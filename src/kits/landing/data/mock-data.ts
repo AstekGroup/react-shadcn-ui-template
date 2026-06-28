@@ -97,7 +97,7 @@ export const testimonials = [
     name: 'Sarah Chen',
     role: 'CTO at TechFlow',
     content:
-      'This platform transformed how our team builds and ships products. We\'ve cut our deployment time by 80%.',
+      "This platform transformed how our team builds and ships products. We've cut our deployment time by 80%.",
     avatar: 'SC',
   },
   {

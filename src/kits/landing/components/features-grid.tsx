@@ -1,17 +1,5 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import {
-  Zap,
-  Shield,
-  Code,
-  Users,
-  BarChart3,
-  Globe,
-} from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Zap, Shield, Code, Users, BarChart3, Globe } from 'lucide-react'
 import { features } from '../data/mock-data'
 
 const iconMap = {

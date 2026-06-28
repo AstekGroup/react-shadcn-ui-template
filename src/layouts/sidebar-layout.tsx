@@ -58,9 +58,7 @@ export function SidebarLayout({ children, nav, title }: LayoutProps) {
         <div className="flex flex-1 flex-col">
           <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background px-6">
             <SidebarTrigger />
-            {title && (
-              <h1 className="text-lg font-semibold">{title}</h1>
-            )}
+            {title && <h1 className="text-lg font-semibold">{title}</h1>}
             <div className="flex-1" />
             <ModeToggle />
             <DropdownMenu>
