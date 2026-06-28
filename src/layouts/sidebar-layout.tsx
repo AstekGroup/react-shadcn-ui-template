@@ -1,3 +1,4 @@
+import { BrandMark } from '@/components/brand-mark'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
@@ -14,6 +15,7 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
+  SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -30,6 +32,9 @@ export function SidebarLayout({ children, nav, title }: LayoutProps) {
     <SidebarProvider>
       <div className="flex h-screen w-full">
         <Sidebar>
+          <SidebarHeader className="h-16 justify-center border-b px-4">
+            <BrandMark />
+          </SidebarHeader>
           <SidebarContent>
             {nav?.map((group) => (
               <SidebarGroup key={group.label}>

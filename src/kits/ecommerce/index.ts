@@ -1,1 +1,5 @@
 export { manifest } from './manifest'
+export { Catalog } from './pages/catalog'
+export { ProductDetail } from './pages/product-detail'
+export { Cart } from './pages/cart'
+export { Orders } from './pages/orders'
