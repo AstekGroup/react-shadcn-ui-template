@@ -2,12 +2,7 @@ import { Link } from 'react-router'
 import { ShoppingBag, Star } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from '@/components/ui/card'
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import type { Product } from '../data/mock-data'
 import { PriceDisplay } from './price-display'
 
@@ -23,9 +18,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <div className="bg-muted relative flex aspect-square items-center justify-center">
             <ShoppingBag className="text-muted-foreground h-12 w-12" />
             {product.badge && (
-              <Badge className="absolute top-2 right-2">
-                {product.badge}
-              </Badge>
+              <Badge className="absolute top-2 right-2">{product.badge}</Badge>
             )}
           </div>
         </Link>

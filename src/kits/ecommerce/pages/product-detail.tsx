@@ -89,9 +89,7 @@ export function ProductDetail() {
                 >
                   <Minus className="h-4 w-4" />
                 </Button>
-                <span className="w-12 text-center font-medium">
-                  {quantity}
-                </span>
+                <span className="w-12 text-center font-medium">{quantity}</span>
                 <Button
                   variant="outline"
                   size="icon-sm"
@@ -102,11 +100,7 @@ export function ProductDetail() {
               </div>
             </div>
 
-            <Button
-              size="lg"
-              className="w-full"
-              disabled={!product.inStock}
-            >
+            <Button size="lg" className="w-full" disabled={!product.inStock}>
               <ShoppingBag className="mr-2 h-5 w-5" />
               {product.inStock ? 'Add to Cart' : 'Out of Stock'}
             </Button>
@@ -139,7 +133,9 @@ export function ProductDetail() {
             </div>
             <div className="space-y-1">
               <p className="text-muted-foreground text-sm">SKU</p>
-              <p className="text-sm font-medium">SKU-{product.id.padStart(6, '0')}</p>
+              <p className="text-sm font-medium">
+                SKU-{product.id.padStart(6, '0')}
+              </p>
             </div>
           </div>
         </CardContent>

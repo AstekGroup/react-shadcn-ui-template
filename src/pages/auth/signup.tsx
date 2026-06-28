@@ -21,9 +21,7 @@ export function SignupPage() {
             <span className="text-lg font-bold text-primary-foreground">A</span>
           </div>
           <CardTitle className="text-2xl">Create an account</CardTitle>
-          <CardDescription>
-            Enter your details to get started
-          </CardDescription>
+          <CardDescription>Enter your details to get started</CardDescription>
         </CardHeader>
         <CardContent>
           <form className="space-y-4">
@@ -33,11 +31,7 @@ export function SignupPage() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="name@example.com"
-              />
+              <Input id="email" type="email" placeholder="name@example.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
@@ -59,17 +53,11 @@ export function SignupPage() {
               <Checkbox id="terms" />
               <Label htmlFor="terms" className="font-normal">
                 I agree to the{' '}
-                <Link
-                  to="/terms"
-                  className="text-primary hover:underline"
-                >
+                <Link to="/terms" className="text-primary hover:underline">
                   Terms of Service
                 </Link>{' '}
                 and{' '}
-                <Link
-                  to="/privacy"
-                  className="text-primary hover:underline"
-                >
+                <Link to="/privacy" className="text-primary hover:underline">
                   Privacy Policy
                 </Link>
               </Label>

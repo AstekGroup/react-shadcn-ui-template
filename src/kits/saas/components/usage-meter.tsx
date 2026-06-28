@@ -20,9 +20,9 @@ export function UsageMeter({ name, used, limit, unit }: UsageMeterProps) {
   }
 
   const getProgressClass = () => {
-    if (isUnlimited) return '[&>[data-slot=progress-indicator]]:bg-muted-foreground'
-    if (percentage >= 80)
-      return '[&>[data-slot=progress-indicator]]:bg-red-500'
+    if (isUnlimited)
+      return '[&>[data-slot=progress-indicator]]:bg-muted-foreground'
+    if (percentage >= 80) return '[&>[data-slot=progress-indicator]]:bg-red-500'
     if (percentage >= 60)
       return '[&>[data-slot=progress-indicator]]:bg-yellow-500'
     return '[&>[data-slot=progress-indicator]]:bg-green-500'

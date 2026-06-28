@@ -3,7 +3,11 @@ import { cn } from '@/lib/utils'
 import { useSearchParams } from 'react-router'
 
 const layouts = [
-  { id: 'sidebar', label: 'Sidebar', description: 'Traditional sidebar navigation' },
+  {
+    id: 'sidebar',
+    label: 'Sidebar',
+    description: 'Traditional sidebar navigation',
+  },
   { id: 'topbar', label: 'Topbar', description: 'Horizontal top navigation' },
   { id: 'landing', label: 'Landing', description: 'Marketing page layout' },
   { id: 'minimal', label: 'Minimal', description: 'Centered, no navigation' },

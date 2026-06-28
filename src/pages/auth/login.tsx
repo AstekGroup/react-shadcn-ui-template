@@ -29,11 +29,7 @@ export function LoginPage() {
           <form className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="name@example.com"
-              />
+              <Input id="email" type="email" placeholder="name@example.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>

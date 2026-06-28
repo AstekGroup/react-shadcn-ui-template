@@ -39,7 +39,7 @@ export function OnboardingWizard() {
                 className={cn(
                   'flex items-start gap-4 rounded-lg border p-4 transition-colors',
                   isCurrent && 'border-primary bg-primary/5',
-                  step.completed && 'bg-muted/50',
+                  step.completed && 'bg-muted/50'
                 )}
               >
                 <div
@@ -49,20 +49,16 @@ export function OnboardingWizard() {
                       ? 'border-primary bg-primary text-primary-foreground'
                       : isCurrent
                         ? 'border-primary text-primary'
-                        : 'border-muted-foreground/30 text-muted-foreground',
+                        : 'border-muted-foreground/30 text-muted-foreground'
                   )}
                 >
-                  {step.completed ? (
-                    <Check className="size-4" />
-                  ) : (
-                    step.id
-                  )}
+                  {step.completed ? <Check className="size-4" /> : step.id}
                 </div>
                 <div className="space-y-1">
                   <p
                     className={cn(
                       'text-sm font-medium leading-none',
-                      step.completed && 'text-muted-foreground line-through',
+                      step.completed && 'text-muted-foreground line-through'
                     )}
                   >
                     {step.title}

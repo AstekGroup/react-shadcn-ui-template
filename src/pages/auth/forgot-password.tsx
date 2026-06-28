@@ -22,19 +22,15 @@ export function ForgotPasswordPage() {
           </div>
           <CardTitle className="text-2xl">Forgot password?</CardTitle>
           <CardDescription>
-            No worries, we&apos;ll send you reset instructions. Enter the
-            email address associated with your account.
+            No worries, we&apos;ll send you reset instructions. Enter the email
+            address associated with your account.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="name@example.com"
-              />
+              <Input id="email" type="email" placeholder="name@example.com" />
             </div>
             <Button type="submit" className="w-full">
               Send reset link

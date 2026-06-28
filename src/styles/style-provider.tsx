@@ -26,14 +26,9 @@ export function StyleProvider({ children }: { children: ReactNode }) {
     setStyleIdState(id)
   }, [])
 
-  const value = useMemo(
-    () => ({ styleId, setStyleId }),
-    [styleId, setStyleId]
-  )
+  const value = useMemo(() => ({ styleId, setStyleId }), [styleId, setStyleId])
 
-  return (
-    <StyleContext.Provider value={value}>{children}</StyleContext.Provider>
-  )
+  return <StyleContext.Provider value={value}>{children}</StyleContext.Provider>
 }
 
 export function useStyle() {

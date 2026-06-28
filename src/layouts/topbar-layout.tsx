@@ -35,8 +35,7 @@ export function TopbarLayout({ children, nav, title }: LayoutProps) {
           size="sm"
           asChild
           className={cn(
-            location.pathname === item.url &&
-              'bg-accent text-accent-foreground'
+            location.pathname === item.url && 'bg-accent text-accent-foreground'
           )}
         >
           <Link to={item.url}>
@@ -52,9 +51,7 @@ export function TopbarLayout({ children, nav, title }: LayoutProps) {
     <div className="flex h-screen flex-col">
       <header className="sticky top-0 z-10 border-b bg-background">
         <div className="flex h-16 items-center gap-4 px-6">
-          {title && (
-            <h1 className="text-lg font-semibold shrink-0">{title}</h1>
-          )}
+          {title && <h1 className="text-lg font-semibold shrink-0">{title}</h1>}
           {isMobile ? (
             <Sheet>
               <SheetTrigger asChild>
@@ -73,9 +70,7 @@ export function TopbarLayout({ children, nav, title }: LayoutProps) {
                       asChild
                     >
                       <Link to={item.url}>
-                        {item.icon && (
-                          <item.icon className="mr-2 h-4 w-4" />
-                        )}
+                        {item.icon && <item.icon className="mr-2 h-4 w-4" />}
                         {item.title}
                       </Link>
                     </Button>

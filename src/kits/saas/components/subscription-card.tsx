@@ -31,9 +31,7 @@ export function SubscriptionCard() {
               <span className="text-2xl font-bold">Pro</span>
               <Badge>Active</Badge>
             </div>
-            <p className="text-muted-foreground text-sm">
-              $29.00 / month
-            </p>
+            <p className="text-muted-foreground text-sm">$29.00 / month</p>
           </div>
           <div className="text-right">
             <p className="text-sm font-medium">Next billing date</p>

@@ -52,8 +52,7 @@ export const products: Product[] = [
   {
     id: '2',
     name: 'Smart Watch Ultra',
-    description:
-      'Advanced fitness tracking with GPS and heart rate monitoring',
+    description: 'Advanced fitness tracking with GPS and heart rate monitoring',
     price: 449.99,
     image: '/placeholder.svg',
     category: 'Electronics',
@@ -64,8 +63,7 @@ export const products: Product[] = [
   {
     id: '3',
     name: 'Premium Cotton T-Shirt',
-    description:
-      'Soft organic cotton crew neck t-shirt in multiple colors',
+    description: 'Soft organic cotton crew neck t-shirt in multiple colors',
     price: 39.99,
     image: '/placeholder.svg',
     category: 'Clothing',
@@ -76,8 +74,7 @@ export const products: Product[] = [
   {
     id: '4',
     name: 'Ergonomic Desk Chair',
-    description:
-      'Adjustable lumbar support with breathable mesh back',
+    description: 'Adjustable lumbar support with breathable mesh back',
     price: 599.99,
     originalPrice: 749.99,
     image: '/placeholder.svg',
@@ -102,8 +99,7 @@ export const products: Product[] = [
   {
     id: '6',
     name: 'TypeScript Handbook',
-    description:
-      'Complete guide to TypeScript for professional developers',
+    description: 'Complete guide to TypeScript for professional developers',
     price: 49.99,
     image: '/placeholder.svg',
     category: 'Books',
@@ -115,8 +111,7 @@ export const products: Product[] = [
   {
     id: '7',
     name: 'Bluetooth Speaker',
-    description:
-      'Portable waterproof speaker with 360-degree sound',
+    description: 'Portable waterproof speaker with 360-degree sound',
     price: 79.99,
     image: '/placeholder.svg',
     category: 'Electronics',
@@ -127,8 +122,7 @@ export const products: Product[] = [
   {
     id: '8',
     name: 'Yoga Mat Premium',
-    description:
-      'Extra thick non-slip yoga mat with carrying strap',
+    description: 'Extra thick non-slip yoga mat with carrying strap',
     price: 59.99,
     image: '/placeholder.svg',
     category: 'Sports',
